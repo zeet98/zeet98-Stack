@@ -32,7 +32,8 @@ public class StackExercise {
     }
 
     /**
-     * Add a value to the top of the deque.
+     * Push a value to the top of the deque.
+     * (this adds the value to the Stack.)
      * @param stack A Deque of Strings.
      * @param item a String to be added to the deque.
      */
@@ -40,8 +41,8 @@ public class StackExercise {
     }
 
     /**
-     * Remove the value from the top of the deque and return that value.
-     * (The method used to remove items from a stack also returns the value.)
+     * Pop the value from the top of the deque and return that value.
+     * (this removes the most recently-pushed value)
      * @param stack A Deque of Strings.
      * @return the value popped from the top of the deque.
      */
@@ -49,7 +50,9 @@ public class StackExercise {
         return "";
     }
     /**
-     * Return the value at the top of a deque without removing the value.
+     * Peek the value at the top of a deque.
+     * This returns the most recently-pushed value, without removing the value.
+     *
      * @param stack A Deque of Strings.
      * @return the value peeked from the top of the deque.
      */
