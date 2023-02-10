@@ -10,7 +10,7 @@ import java.util.Deque;
  * And you can read about the stack class here (deque exhibits the same behavior as Stack and contains the same
  * methods): https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
  */
-public class StackExercise {
+public class Lab {
     /**
      * Implement and return some class that implements Deque, such as ArrayDeque, which contains all the functionality
      * of a Stack. This challenge will not be using the Stack class, because the Stack class is known to have a shoddy

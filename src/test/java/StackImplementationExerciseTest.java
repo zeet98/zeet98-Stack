@@ -3,14 +3,13 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Deque;
-import java.util.Stack;
 
 public class StackImplementationExerciseTest {
-    static StackExercise se;
+    static Lab se;
 
     @BeforeClass
     public static void setUp(){
-        se = new StackExercise();
+        se = new Lab();
     }
     /**
      * A newly instantiated Stack should not be null.
