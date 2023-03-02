@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.Deque;
 /**
  * Stacks are LIFO - last in, first out, like a stack of plates or books, or the puzzle game "Towers of Hanoi".
@@ -20,7 +21,8 @@ public class Lab {
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        return null;
+        Deque<String> stack = new ArrayDeque<>();
+        return stack;
     }
 
     /**
@@ -28,7 +30,7 @@ public class Lab {
      * @return the number of elements in the deque.
      */
     public int getSize(Deque<String> stack){
-        return 0;
+        return stack.size();
     }
 
     /**
@@ -38,6 +40,7 @@ public class Lab {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
+        stack.push(item);
     }
 
     /**
@@ -47,7 +50,8 @@ public class Lab {
      * @return the value popped from the top of the deque.
      */
     public String removeFromTopOfStack(Deque<String> stack){
-        return "";
+        String p = stack.pop();
+        return p;
     }
     /**
      * Peek the value at the top of a deque.
@@ -57,6 +61,6 @@ public class Lab {
      * @return the value peeked from the top of the deque.
      */
     public String getTopOfStackWithoutRemoving(Deque<String> stack){
-        return "";
+        return stack.peek();
     }
 }
